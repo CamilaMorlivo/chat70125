@@ -24,10 +24,11 @@ app.set('views', __dirname + '/views')
 // extención de las plantillas
 app.set('view engine', 'handlebars')
 
-
-app.post('/uploader', uploader.single('myFile'), (req, res)=>{
+/*
+app.post('/', uploader.single('myFile'), (req, res)=>{
     res.send('archivo subido')
 })
+*/
 
 app.use('/', viewsRouter)
 app.use('/api/users', userRouter)
