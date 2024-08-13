@@ -2,7 +2,6 @@ const express       = require('express')
 const userRouter    = require('./routes/users.router.js')
 const productRouter = require('./routes/products.router.js')
 const viewsRouter = require('./routes/views.router.js')
-const { uploader }  = require('./utils/multer.js')
 const handlebars    = require('express-handlebars')
 
 const { Server  } = require('socket.io')
